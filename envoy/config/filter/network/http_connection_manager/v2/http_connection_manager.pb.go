@@ -119,19 +119,19 @@ type HttpConnectionManager_Tracing_OperationName int32
 
 const (
 	// The HTTP listener is used for ingress/incoming requests.
-	INGRESS HttpConnectionManager_Tracing_OperationName = 0
+	INGRESS HttpConnectionManager_Tracing_OperationName = 1
 	// The HTTP listener is used for egress/outgoing requests.
-	EGRESS HttpConnectionManager_Tracing_OperationName = 1
+	EGRESS HttpConnectionManager_Tracing_OperationName = 2
 )
 
 var HttpConnectionManager_Tracing_OperationName_name = map[int32]string{
-	0: "INGRESS",
-	1: "EGRESS",
+	1: "INGRESS",
+	2: "EGRESS",
 }
 
 var HttpConnectionManager_Tracing_OperationName_value = map[string]int32{
-	"INGRESS": 0,
-	"EGRESS":  1,
+	"INGRESS": 1,
+	"EGRESS":  2,
 }
 
 func (x HttpConnectionManager_Tracing_OperationName) String() string {
